@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: NA2 perfect lens designer
+message: If you use this software, please cite it as below.
+type: software
+authors:
+  - family-names: Porat
+    given-names: Dan
+    affiliation: Tel Aviv University
+version: "1.1"
+date-released: "2026-10-11"
+repository-code: https://github.com/na2radiant-hash/NA2-lens-designer
+abstract: >-
+  Config-driven design, ray-trace validation, vendor export and paper figures of the NA2
+  omnidirectional collimating lens (MATLAB), including the fabrication-tolerance check of
+  the supplementary figure.
+license: CC-BY-4.0
