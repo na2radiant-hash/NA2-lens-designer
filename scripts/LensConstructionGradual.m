@@ -41,7 +41,7 @@ RUN_MODE = 'paper';     % 'paper' | 'vendor'
 %   its own lens: design fan alpha_i = (i-1)*(fan_max_deg - fan_eps_deg)/(design_rays-1),
 %   inner vertex at 1 du, source at the origin.
 % --- Fig 1A (zoom) + Fig 1B (full view) -------------------------------------
-PAPER.fig1AB.enable      = false;
+PAPER.fig1AB.enable      = true;
 PAPER.fig1AB.n2          = 2.003;    % lens refractive index
 PAPER.fig1AB.layers      = 8;        % surfaces (2 per element -> 4 elements)
 PAPER.fig1AB.design_rays = 2000;      % rays the lens is CONSTRUCTED with
@@ -50,7 +50,7 @@ PAPER.fig1AB.fan_eps_deg = 0;        % last design ray at fan_max_deg - fan_eps_
 PAPER.fig1AB.drawn_rays  = 10;       % rays DRAWN in the upper half (mirrored -> 19 lines)
 PAPER.fig1AB.zoom_half   = 10;       % Fig 1A window half-size [du] ([] = auto-frame 2 inner elements)
 % --- Fig 1E (2-D rays) + Fig 1F (3-D rays) -----------------------------------
-PAPER.fig1EF.enable      = false;
+PAPER.fig1EF.enable      = true;
 PAPER.fig1EF.n2          = 2.003;
 PAPER.fig1EF.layers      = 8;
 PAPER.fig1EF.design_rays = 2000;
@@ -63,7 +63,7 @@ PAPER.fig1EF.circles     = true;     % Fig 1F output-aperture circles
 PAPER.fig1EF.emitter_r   = 2.0;      % Fig 1F emitter ball radius [du]
 PAPER.fig1EF.triad       = true;     % Fig 1F z/x/y direction triad
 % --- Fig 2C: simulation of the experimental prototype -------------------------
-PAPER.fig2C.enable       = false;
+PAPER.fig2C.enable       = true;
 PAPER.fig2C.n2           = 1.58;     % prototype material
 PAPER.fig2C.layers       = 16;       % 8 elements
 PAPER.fig2C.design_rays  = 2000;
@@ -81,7 +81,7 @@ PAPER.fig2C.zoom_half    = [];       % zoom window half-size [du]; [] = auto: fr
 PAPER.fig2C.zoom_elements = 1;       % inner elements (crescents) fully enclosed by the auto zoom window
 % --- Fig 3B (collection efficiency vs NA) + Fig 3C (lens zoom with theta_0) --
 %     one figure, labelled + label-free copies; Fig 3C uses the Fig 1A/1B lens above
-PAPER.fig3BC.enable      = false;
+PAPER.fig3BC.enable      = true;
 PAPER.fig3BC.targets     = [0.99, 0.999];   % collection levels marked on the dipole curve (99 %, 99.9 %)
 PAPER.fig3BC.x_axis      = 'theta';        % 'theta' = theta_0 = FULL mouth angle (tip to mirrored tip), 0-180 deg;
                                            %           Fig 3C arc spans the whole inner mouth

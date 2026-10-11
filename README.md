@@ -22,11 +22,13 @@ parameters in the `PAPER` block of the script and writes the panels to `outputs/
 | Fig 3B, 3C | `fig3BC_collection.*`, `*_nolabels.*` | dipole collection vs angle |
 | Fig S (tolerances) | `figS_A/B/C.*`, `*_nolabels.*`, `tolerance_results.csv` | lambda/2 figure error, lambda/4 split-element alignment |
 
-Every parameter of every panel is set in the `PAPER` block; `PAPER.<figure>.enable = false` skips a
-figure. The tolerance Monte Carlo (Fig S) takes about 1.5 min; the whole run a few minutes.
-`scripts/README.md` describes the pipeline, the library and the tolerance method in detail.
+Every parameter of every panel is set in the `PAPER` block; all figures are enabled as shipped and
+`PAPER.<figure>.enable = false` skips one. The tolerance Monte Carlo (Fig S) takes about 2 min; the
+whole run a few minutes. `scripts/README.md` describes the pipeline, the library and the tolerance
+method in detail.
 
-Tested with MATLAB R2024b. Requires only base MATLAB (`exportgraphics`, `spline`, `interp1`).
+Tested with MATLAB R2024b on Windows. Paper mode needs base MATLAB only; vendor mode also needs the
+Symbolic Math Toolbox. The EMF export of Fig 1E is Windows-only and is skipped elsewhere.
 
 ## Vendor mode
 
