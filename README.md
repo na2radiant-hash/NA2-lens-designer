@@ -16,8 +16,8 @@ parameters in the `PAPER` block of the script and writes the panels to `outputs/
 
 | Figure | Files | Content |
 |---|---|---|
-| Fig 1A, 1B | `fig1A_*`, `fig1B_*` | lens and ray fan |
-| Fig 1F | `fig1F_rays3d.*` | 3-D rays |
+| Fig 1A, 1B | `fig1A_zoom.*`, `fig1B_raytrace.*` | lens and ray fan, zoom and full view |
+| Fig 1E, 1F | `fig1E_rays2d.*`, `fig1F_rays3d.*` | rays in 2-D and 3-D |
 | Fig 2C | `fig2C_simulation.*`, `fig2C_zoom.*` | 16-surface lens with the laser-photo rays |
 | Fig 3B, 3C | `fig3BC_collection.*`, `*_nolabels.*` | dipole collection vs angle |
 | Fig S (tolerances) | `figS_A/B/C.*`, `*_nolabels.*`, `tolerance_results.csv` | lambda/2 figure error, lambda/4 split-element alignment |
